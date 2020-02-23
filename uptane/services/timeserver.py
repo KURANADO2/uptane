@@ -14,6 +14,7 @@ import uptane # Import before TUF modules; may change tuf.conf values.
 import uptane.formats
 import uptane.common
 import uptane.encoding.asn1_codec as asn1_codec
+import demo
 
 from uptane.encoding.asn1_codec import DATATYPE_TIME_ATTESTATION
 
@@ -82,8 +83,9 @@ def get_signed_time(nonces):
 
   return signable_time_attestation
 
-
-
+# key = demo.import_private_key('timeserver')
+# set_timeserver_key(key)
+# get_signed_time([1, 2, 3])
 
 
 def get_signed_time_der(nonces):

@@ -201,7 +201,7 @@ def add_target_to_imagerepo(target_fname, filepath_in_repo):
   repo_dir = repo._repository_directory
   destination_filepath = os.path.join(repo_dir, 'targets', filepath_in_repo)
 
-  shutil.copy(target_fname, destination_filepath)
+  shutil.copy('/Users/jing/Code/GitHub/uptane/' + target_fname, destination_filepath)
 
   repo.targets.add_target(destination_filepath)
 

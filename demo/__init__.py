@@ -80,7 +80,8 @@ def import_public_key(keyname):
     Key location: DEMO_KEYS_DIR
   """
   return rt.import_ed25519_publickey_from_file(
-      os.path.join(DEMO_KEYS_DIR, keyname + '.pub'))
+      # os.path.join(DEMO_KEYS_DIR, keyname + '.pub'))
+      os.path.join('/Users/jing/Code/GitHub/uptane/demo/keys', keyname + '.pub'))
 
 
 
@@ -93,7 +94,8 @@ def import_private_key(keyname):
     Key location: DEMO_KEYS_DIR
   """
   return rt.import_ed25519_privatekey_from_file(
-      os.path.join(DEMO_KEYS_DIR, keyname), password='pw')
+      # os.path.join(DEMO_KEYS_DIR, keyname), password='pw')
+      os.path.join('/Users/jing/Code/GitHub/uptane/demo/keys', keyname), password='pw')
 
 
 
